@@ -1,0 +1,1182 @@
+/*
+Theme Name: MiddCORE
+Theme URI: http://willpots.com/MiddCORE
+Author: Will Potter (@willpots)
+Author URI: http://willpots.com/
+Description: A theme designed and written by Will Potter.
+Version: 1.0
+License: Middlebury College Owns Code (Except for GPL/MIT Borrowed Parts)
+License URI: license.txt
+Tags: 
+*/
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul,
+ol {
+    margin-left: 0;
+    padding: 0 0 0 40px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+
+figure {
+    margin: 0;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+
+legend {
+    border: 0; /* 1 */
+    *margin-left: -7px; /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+
+button,
+input {
+    line-height: normal; /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding that is displayed in S5, Chrome on OS X
+ */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/* 
+ * Remove most spacing between table cells
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Fonts */
+@font-face {
+    font-family: 'UniversLTStd45Light';
+    src: url('fonts/universltstd-light-webfont.eot');
+    src: url('fonts/universltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/universltstd-light-webfont.woff') format('woff'),
+         url('fonts/universltstd-light-webfont.ttf') format('truetype'),
+         url('fonts/universltstd-light-webfont.svg#UniversLTStd45Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BemboRegular';
+    src: url('fonts/bembo-webfont.eot');
+    src: url('fonts/bembo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bembo-webfont.woff') format('woff'),
+         url('fonts/bembo-webfont.ttf') format('truetype'),
+         url('fonts/bembo-webfont.svg#BemboRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Generics */
+.bembo {
+	font-family: "BemboRegular", "Georgia", serif;
+}
+.block {
+	display: block;
+}
+.lightblue {
+	color: rgb(178,235,248);
+}
+.three-col {
+	vertical-align: middle;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+	-webkit-column-rule-width: 1px;
+	-moz-column-rule-width: 1px;
+	column-rule-width: 1px;
+	-webkit-column-rule-style: solid;
+	-moz-column-rule-style: solid;
+	column-rule-style: solid;
+	-webkit-column-rule-color: white;
+	-moz-column-rule-color: white;
+	column-rule-color: white;
+}
+.two-col {
+	vertical-align: middle;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2s;
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+	-webkit-column-rule-width: 1px;
+	-moz-column-rule-width: 1px;
+	column-rule-width: 1px;
+	-webkit-column-rule-style: solid;
+	-moz-column-rule-style: solid;
+	column-rule-style: solid;
+	-webkit-column-rule-color: white;
+	-moz-column-rule-color: white;
+	column-rule-color: white;
+}
+.column {
+	display: inline-block;
+	padding: 15px;
+	vertical-align: middle;
+}
+.column img {
+	display: block;
+	padding: 0 0 10px 0;
+}
+.center {
+	text-align: center;
+}
+.centered {
+	margin: 0 auto;
+}
+
+a:link, a:visited {
+	color: rgb(178,235,248);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	/*background: rgb(17,30,49);*/
+}
+.sixhundoheight {
+	height: 400px;
+}
+
+/*canvas {
+	border: 1pt solid red;
+}*/
+* {
+margin: 0;
+}
+html,body {
+	background: rgb(7,20,39);
+/*	background: #1b5199; 
+	background: -moz-radial-gradient(center, ellipse cover,  #1b5199 0%, #071427 100%); 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1b5199), color-stop(100%,#071427)); 
+	background: -webkit-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
+	background: -o-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
+	background: -ms-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
+	background: radial-gradient(ellipse at center,  #1b5199 0%,#071427 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5199', endColorstr='#071427',GradientType=1 ); 
+
+*/
+	color: rgb(255,255,255);
+	font-family: "UniversLTStd45Light", sans-serif;
+}
+p {
+	margin: 15px 0;
+}
+/* Structure */
+#container {
+	width: 968px;
+	margin: 0 auto;
+}
+/* Sticky Footer */
+/*.wrapper {
+	min-height: 100%;
+	margin: 0 auto; 
+}*/
+/*
+#main {
+	overflow:auto;
+	padding-bottom: 35px;
+}  */
+/*.footer {
+	margin: -70px auto 0 auto;
+	width: 450px;
+	border-top:1pt solid white;
+	position: relative;
+	height: 20px;
+	clear: both;
+	padding: 7px;
+}*/
+.footer {
+	border-top: 1pt solid white;
+	width: 450px;
+	padding: 15px 0;
+	margin: 20px auto 0 auto;
+	text-align: center;
+}
+/* Other Stuffs */
+.site-header { 
+	font-family: "Bembo", "Georgia", serif;
+	font-size: 60px;
+	text-align: center;
+}
+.tagline {
+	text-align: center;
+	font-size: 20px;
+	font-family: "UniversLTStd45Light", sans-serif;
+}
+.image-container {
+	text-align: center;
+	padding: 10px;
+}
+
+nav.main-nav {
+	position: relative;
+	padding: 10px 0;
+	text-align: center;
+	vertical-align: middle;
+	height:50px;	
+}
+.nav-link {
+	cursor: pointer;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.nav-link-big {
+	padding: 10px 20px;
+}
+.nav-link:hover {
+/*	background: rgb(37,50,79);*/
+	text-decoration: underline;
+}
+.sub-menu {
+	position: relative;
+	top:8px;
+	cursor: pointer;
+	display: inline-block;
+	color: #fff;
+	text-align: left;
+}
+.sub-menu:hover {
+	background: rgb(37,50,79);
+}
+.sub-menu ul {
+	position: absolute;
+	display: inline-block;
+	background: rgb(37,50,79);
+	overflow: hidden;
+	list-style: none;
+	text-align: left;
+	z-index: 10;
+	margin: 0;
+	float: left;
+	padding: 0px;
+	-webkit-box-shadow: 1px 1px 1px #aaa;
+	-moz-box-shadow: 1px 1px 1px #aaa;
+	box-shadow: 1px 1px 1px #aaa;
+}
+.sub-menu ul li {
+	margin: 0;
+	display: none;
+}
+.sub-menu ul li a {
+	display: block;
+	padding: 10px;
+}
+.sub-menu:hover ul {
+	display: block;
+}
+.sub-menu:hover ul li {
+	display: block;
+}
+#front-header {
+	font-family: "Bembo", "Georgia", serif;
+	margin: 10px 0 30px 0;
+}
+#breadcrumbs {
+	margin: 10px 0;
+	padding: 5px 0;
+	font-size: 13px;
+}
+/* Wheel */
+#wheel-container {
+	margin: 0 auto;
+	padding: 0 0;
+	width: 500px;
+}
+#wheel {
+	margin: 0 auto;
+}
+.about-footer {
+	font-family: "Bembo", "Georgia", serif;
+	text-align: center;
+	font-size: 12px;
+}
+embed {
+	margin: 0 auto;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Page Settings */
+.entry-title {
+	text-align: center;
+	font-weight: normal;
+	font-family: "BemboRegular", "Georgia", serif;
+	font-size: 50px;
+	margin: .5em 0;
+}
+.entry {
+	min-height: 100px;
+	padding: 10px 0;
+}
+.whitebg a:link, .whitebg a:visited {
+	border-bottom: 1px dotted hsl(210, 75%, 27%);
+	color:hsl(236, 48%, 29%);
+	text-decoration: none;
+}
+.whitebg a:hover {
+	color: hsl(210, 100%, 20%);
+	border-bottom: 1px solid hsl(210, 100%, 20%);
+	background: #EEFFCC;
+}
+.bracket-entry {
+	background-image: url(images/topleft.png), 
+						url(images/topright.png), 
+						url(images/bottomleft.png), 
+						url(images/bottomright.png), 
+						url(images/lwall.png), 
+						url(images/rwall.png);
+	background-position: left top, 
+							right top,
+							left bottom,
+							right bottom,
+							left center,
+							right center;
+	background-clip: border-box,border-box,border-box,border-box,content-box,content-box;
+	background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,repeat-y,repeat-y;
+}
+.subheading {
+	font-family: "Bembo", "Georgia", serif;
+	display: block;
+	clear: both;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 8px 0;
+}
+.subheading2 {
+	font-family: "Bembo", "Georgia", serif;
+	display: block;
+	clear: both;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 8px 0;
+}
+.dividingstar {
+	font-size: 25px;
+	margin: 16px;
+	clear:both;
+	text-align: center;
+	font-family: serif;
+}
+.large-quote {
+	font-size: 18px;
+	margin: 20px;
+}
+.quotee {
+	color: hsl(0, 100%, 20%);
+	font-size: 80%;
+	font-weight: bold;
+	font-family: "Georgia", serif;
+}
+.large-quote:nth-child(odd) {
+
+}
+.large-quote:nth-child(even) {
+	text-align: right;
+}
+.large-quote:nth-child(3n+1) {
+	/*max-width: 70%;*/
+}
+.large-quote:nth-child(even):nth-child(3n+1) {
+	margin: 0 0 0 auto;
+}
+.large-quote:nth-child(3n+2) {
+	font-size: 16px;
+}
+.large-quote:nth-child(3n) {
+
+}
+.testimonial-pic {
+	float:right;
+}
+.testimonial-pic:nth-child(even) {
+	float:left;
+}
+.red-quotee {
+	color: hsl(0, 100%, 20%);
+}
+.blue-quotee {
+	color: hsl(202, 95%, 22%);
+}
+.green-quotee {
+	color: hsl(270, 48%, 29%);
+}
+
+.serifp p {
+	font-family: "Georgia", serif;
+}
+.sansp p {
+	font-family: "UniversLTStd45Light", sans-serif;
+}
+.entry-content {
+	padding: 30px 50px;
+	font-size: 16px;
+}
+.entry-content h1 {
+	font-family: "Georgia", serif;
+	color: rgb(17,30,49);
+	font-size: 30px;
+}
+.entry-content h2 {
+	font-family: "Georgia", serif;
+	color:hsl(202, 95%, 22%);
+	font-size: 26px;
+}
+.entry-content h3 {
+	font-family: "Georgia", serif;
+	color:hsl(202, 95%, 22%);
+	font-size: 23px;
+}
+.entry-content h4 {
+	color: hsl(236, 48%, 29%);
+	font-size: 20px;
+	font-family: "Georgia", serif;
+}
+.entry-content h5 {
+	color: hsl(0, 100%, 20%);
+	margin: 15px 0;
+	font-size: 17px;
+	font-family: "Georgia", serif;
+}
+.entry-content h6 {
+	color:hsl(202, 95%, 22%);
+	margin: 15px 0;
+	font-family: "Georgia", serif;
+	font-size: 14px;
+}
+.entry-content .larger {
+	font-size: 16px;
+}
+.whitebg {
+	background: white;
+	color: hsl(0, 0%, 25%);
+}
+.lighterblue {
+	background: rgb(17,30,49);
+}
+.whitebg em {
+	
+}
+/* Core Skills */
+.lightgrey {
+	color: #aaa;
+}
+div.skillword {
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	font-family: "BemboRegular", "Georgia", serif;
+	padding: 4px;
+}
+div.skillword:hover, div.skillword:hover span.lightgrey {
+	-webkit-transition:translate(-2px,0);
+	-moz-transition:translate(-2px,0);
+	-o-transition:translate(-2px,0);
+	-ms-transition:translate(-2px,0);
+	transition:translate(-2px,0);
+	font-weight: bold;
+	color: rgb(178,235,248);
+}
+div.skillword-content {
+	display: inline-block;
+	position: absolute;
+	width: 0;
+	min-height: 70px;
+	max-height: 200px;
+	height: auto;
+	background: white;
+	-webkit-transition: all .12s ease-in;
+	-moz-transition: all .12s ease-in;
+	-o-transition: all .12s ease-in;
+	-ms-transition: all .12s ease-in;
+	transition: all .12s ease-in;
+	z-index: 100;
+	margin: 5px 0 0 15px;
+	border-radius: 5px;
+	overflow:hidden;
+	color: black;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 0px;
+	-webkit-box-shadow: 1px 1px 1px #aaa;
+	-moz-box-shadow: 1px 1px 1px #aaa;
+	box-shadow: 1px 1px 1px #aaa;
+}
+div.skillword:hover div.skillword-content {
+	padding: 8px;
+	width: 300px;
+}
+div.skillword-title {
+	font-size: 13px;
+	font-style: italic;
+}
+
+/* Categories */
+
+.category-grid-item {
+	display: block;
+	width:	442px;
+	height: 200px;
+	overflow: hidden;
+	background-color: #8389A3;
+	padding: 8px 10px 8px 10px;
+	border-radius: 4px;
+	border:1px solid #B1BAE0;
+}
+
+.category-grid-item-accent {
+	float: left;
+	margin: 8px;
+	padding:2px;
+	border-radius: 6px;	
+	background-color: #5A5E73;	
+}
+
+/* Posts */
+
+.gridlink {
+	
+}
+
+.attachment-gridnail {
+	float:left;
+	padding:0 4px 4px 0;
+}
+
+#content-grid {
+	min-height: 600px;	 
+}
+
+.post-grid {
+	clear:both;
+}
+
+.post-grid-item {
+	display: block;
+	width:	200px;
+	height: 300px;
+	overflow: hidden;
+	background-color: #8389A3;
+	padding: 8px 10px 8px 10px;
+	border-radius: 4px;
+	border:1px solid #B1BAE0;
+}
+
+.post-grid-accent {
+	float: left;
+	margin: 8px;
+	padding:2px;
+	border-radius: 6px;	
+	background-color: #5A5E73;	
+}
+
+.post-title-grid {
+	font-family: "BemboRegular", "Georgia", serif;
+	font-size: 16px;
+	display: block;
+	min-height: 60px;
+	margin-bottom: 5px;
+}
+
+#content {
+	min-height: 300px;
+	clear:both;
+}
+
+.cleared { 
+	cleared: both;
+}
+.post {
+	display: block;
+	width:	960px;
+	float: left;
+	background-color: #8389A3;
+	padding: 8px;
+}
+.post-title {
+	font-family: "BemboRegular", "Georgia", serif;
+	font-size: 40px;
+}
+
+.post-title a, .post-title-grid a {
+	color: white;
+}
+.post-content-grid {
+	border-top: 1pt solid #D9E3FF;
+	padding: 5px 0;
+	display: block;
+	height: 180px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.post-content-grid p {
+	margin: 3px 0;
+}
+.post-content {
+	border-top: 1pt solid white;
+	padding: 10px;
+}
+.post-meta {
+	font-size: 12px;
+	padding: 10px 0;
+}
+.post-meta-grid {
+	font-size: 12px;
+	padding: 10px 0;
+}
+.post-meta a, .post-meta-grid a {
+	color: rgb(178,235,248);
+}
+#crumbs a.logo {
+	position: relative;
+	top:-5px;
+}
+/* Social Media */
+.sm-box {
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	width: 44px;
+	padding: 6px;
+}
+.two-columns {
+	clear: both;
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-count:2;
+	-webkit-column-gap:20px;
+	-moz-column-gap:20px;
+	column-gap:20px;
+}
+#breadcrumbs {
+	vertical-align: middle;
+}
+#breadcrumbs a { 
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+}
+.two-columns img {
+	margin:10px;
+}
+/* Blog */
+#nav-below {
+padding: 15px;
+clear:both;
+}
+.nav-previous {
+	float: right;
+	display: inline-block;
+}
+.nav-next {
+	float: left;
+	display: inline-block;
+}	
+/* Slides */
+/*
+	Slideshow
+*/
+
+#slides {
+	z-index:100;
+	width: 500px;
+	margin: 20px auto;
+	display: block;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:500px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:500px;
+	height:300px;
+	display:block;
+	text-align: center;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:relative;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	display: block;
+	margin:26px auto 0;
+
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+

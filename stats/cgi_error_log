@@ -1,0 +1,148 @@
+20120118T141936: www.middcore.com/index.php
+PHP Parse error:  syntax error, unexpected T_ELSE in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 27
+
+20120126T200642: www.middcore.com/wp-content/themes/middcore/index.php
+PHP Fatal error:  Call to undefined function get_header() in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 1
+
+20120215T211404: middcore.middlebury.edu/wp-content/themes/middcore/page-insidecore.php
+PHP Fatal error:  Call to undefined function get_header() in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/page-insidecore.php on line 6
+
+20120531T165630: middcore.middlebury.edu/index.php
+suexec failure: could not open log file
+fopen: Permission denied
+
+20120620T224505: middcore.com/wp-content/themes/middcore/index.php
+PHP Fatal error:  Call to undefined function get_header() in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 1
+
+20120622T184038: middcore.middlebury.edu/index.php
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plugin.php on line 170
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plu
+20120622T184057: middcore.middlebury.edu/index.php
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plugin.php on line 170
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plu
+20120622T184208: middcore.middlebury.edu/index.php
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plugin.php on line 170
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plu
+20120622T184325: middcore.middlebury.edu/index.php
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plugin.php on line 170
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plu
+20120622T184327: middcore.middlebury.edu/index.php
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plugin.php on line 170
+PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, '_excerpt_length' was given in /hermes/web08/b772/moo.middcorecom/wp-includes/plu
+20120715T125534: middcore.com/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T125618: middcore.com/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T130610: middcore.com/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T131118: middcore.com/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T131434: middcore.middlebury.edu/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T131645: middcore.com/index.php
+PHP Fatal error:  Cannot use object of type stdClass as array in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185950: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185953: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185954: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185955: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185956: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185957: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T185959: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T190040: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 19
+
+20120715T190044: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 19
+
+20120715T190046: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 19
+
+20120715T190218: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 17
+
+20120715T190316: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 17
+
+20120715T190318: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 17
+
+20120715T190459: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T190501: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T190502: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected ';' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 12
+
+20120715T231025: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/single.php on line 23
+
+20120715T231026: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/single.php on line 23
+
+20120715T231317: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/single.php on line 25
+
+20120715T231322: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/single.php on line 25
+
+20120715T231324: middcore.middlebury.edu/index.php
+PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/single.php on line 25
+
+20120716T221525: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221528: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221530: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221531: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221547: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221548: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221549: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221550: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221552: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221608: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221609: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
+20120716T221610: middcore.com/index.php
+PHP Parse error:  syntax error, unexpected '/' in /hermes/web08/b772/moo.middcorecom/wp-content/themes/middcore/index.php on line 18
+
