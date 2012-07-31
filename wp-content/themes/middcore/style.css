@@ -7,7 +7,7 @@ Description: A theme designed and written by Will Potter.
 Version: 1.0
 License: Middlebury College Owns Code (Except for GPL/MIT Borrowed Parts)
 License URI: license.txt
-Tags: 
+Tags:
 */
 /*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 
@@ -89,7 +89,7 @@ body {
     margin: 0;
 }
 
-/* 
+/*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
@@ -149,9 +149,9 @@ abbr[title] {
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b, 
-strong { 
-    font-weight: bold; 
+b,
+strong {
+    font-weight: bold;
 }
 
 blockquote {
@@ -281,7 +281,7 @@ img {
 }
 
 /*
- * Corrects overflow displayed oddly in IE9 
+ * Corrects overflow displayed oddly in IE9
  */
 
 svg:not(:root) {
@@ -367,8 +367,8 @@ input {
  */
 
 button,
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
@@ -432,7 +432,7 @@ textarea {
    Tables
    ========================================================================== */
 
-/* 
+/*
  * Remove most spacing between table cells
  */
 
@@ -543,14 +543,14 @@ margin: 0;
 }
 html,body {
 	background: rgb(7,20,39);
-/*	background: #1b5199; 
-	background: -moz-radial-gradient(center, ellipse cover,  #1b5199 0%, #071427 100%); 
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1b5199), color-stop(100%,#071427)); 
-	background: -webkit-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
-	background: -o-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
-	background: -ms-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%); 
-	background: radial-gradient(ellipse at center,  #1b5199 0%,#071427 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5199', endColorstr='#071427',GradientType=1 ); 
+/*	background: #1b5199;
+	background: -moz-radial-gradient(center, ellipse cover,  #1b5199 0%, #071427 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1b5199), color-stop(100%,#071427));
+	background: -webkit-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%);
+	background: -o-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  #1b5199 0%,#071427 100%);
+	background: radial-gradient(ellipse at center,  #1b5199 0%,#071427 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5199', endColorstr='#071427',GradientType=1 );
 
 */
 	color: rgb(255,255,255);
@@ -567,7 +567,7 @@ p {
 /* Sticky Footer */
 /*.wrapper {
 	min-height: 100%;
-	margin: 0 auto; 
+	margin: 0 auto;
 }*/
 /*
 #main {
@@ -591,7 +591,7 @@ p {
 	text-align: center;
 }
 /* Other Stuffs */
-.site-header { 
+.site-header {
 	font-family: "Bembo", "Georgia", serif;
 	font-size: 60px;
 	text-align: center;
@@ -611,7 +611,7 @@ nav.main-nav {
 	padding: 10px 0;
 	text-align: center;
 	vertical-align: middle;
-	height:50px;	
+	height:50px;
 }
 .nav-link {
 	cursor: pointer;
@@ -733,13 +733,13 @@ embed {
 	background: #EEFFCC;
 }
 .bracket-entry {
-	background-image: url(images/topleft.png), 
-						url(images/topright.png), 
-						url(images/bottomleft.png), 
-						url(images/bottomright.png), 
-						url(images/lwall.png), 
+	background-image: url(images/topleft.png),
+						url(images/topright.png),
+						url(images/bottomleft.png),
+						url(images/bottomright.png),
+						url(images/lwall.png),
 						url(images/rwall.png);
-	background-position: left top, 
+	background-position: left top,
 							right top,
 							left bottom,
 							right bottom,
@@ -868,7 +868,7 @@ embed {
 	background: rgb(17,30,49);
 }
 .whitebg em {
-	
+
 }
 /* Core Skills */
 .lightgrey {
@@ -933,24 +933,25 @@ div.skillword-title {
 	width:	442px;
 	height: 200px;
 	overflow: hidden;
-	background-color: #8389A3;
+	background-color: #fff;
 	padding: 8px 10px 8px 10px;
-	border-radius: 4px;
+	border-radius: 2px;
 	border:1px solid #B1BAE0;
 }
 
 .category-grid-item-accent {
 	float: left;
 	margin: 8px;
-	padding:2px;
-	border-radius: 6px;	
-	background-color: #5A5E73;	
 }
-
+.category-grid-title {
+	font-family: "BemboRegular", "Georgia", serif;
+	font-size: 30px;
+	text-shadow: 3px 3px 4px #000;
+}
 /* Posts */
 
 .gridlink {
-	
+
 }
 
 .attachment-gridnail {
@@ -959,37 +960,49 @@ div.skillword-title {
 }
 
 #content-grid {
-	min-height: 600px;	 
+	min-height: 600px;
 }
 
 .post-grid {
 	clear:both;
+    -moz-column-fill: auto;
+    -moz-column-width:220px;
+
+    -webkit-column-fill: auto;
+    -webkit-column-width:220px;
+
+    column-fill: auto;
+    column-width:220px;
+
 }
 
 .post-grid-item {
 	display: block;
-	width:	200px;
-	height: 300px;
+	width:	201px;
+	height: auto;
 	overflow: hidden;
-	background-color: #8389A3;
+	background-color: #ffffff;
+	color:rgb(7, 20, 39);
 	padding: 8px 10px 8px 10px;
-	border-radius: 4px;
-	border:1px solid #B1BAE0;
+	border-radius: 2px;
+	border:1px solid #AAA;
+	position: relative;
 }
 
 .post-grid-accent {
-	float: left;
+	display:inline-block;
+	position: relative;
+	vertical-align: top;
 	margin: 8px;
-	padding:2px;
-	border-radius: 6px;	
-	background-color: #5A5E73;	
+	-moz-column-break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	column-break-inside: avoid;
 }
 
 .post-title-grid {
 	font-family: "BemboRegular", "Georgia", serif;
 	font-size: 16px;
 	display: block;
-	min-height: 60px;
 	margin-bottom: 5px;
 }
 
@@ -998,29 +1011,43 @@ div.skillword-title {
 	clear:both;
 }
 
-.cleared { 
+.cleared {
 	cleared: both;
 }
 .post {
 	display: block;
 	width:	960px;
 	float: left;
-	background-color: #8389A3;
+	background-color: #fff;
+	color:rgb(7, 20, 39);
 	padding: 8px;
+}
+.post a {
+	color: rgb(7, 20, 39);
+	text-decoration: underline;
+}
+.post a:hover {
+	color: rgb(67, 90, 149);
 }
 .post-title {
 	font-family: "BemboRegular", "Georgia", serif;
 	font-size: 40px;
+	padding:0px 10px;
+	word-wrap: break-word;
 }
-
-.post-title a, .post-title-grid a {
-	color: white;
+.post-title a {
+	text-decoration: none;
+}
+.post-title a, .post-title-grid a,
+.post-title a:link, .post-title-grid a:link,
+.post-title a:visited, .post-title-grid a:visited {
+	color: rgb(7, 20, 39);
 }
 .post-content-grid {
-	border-top: 1pt solid #D9E3FF;
+	border-top: 1pt solid rgb(7, 20, 39);
 	padding: 5px 0;
 	display: block;
-	height: 180px;
+	height: auto;
 	font-size: 14px;
 	overflow: hidden;
 }
@@ -1029,11 +1056,11 @@ div.skillword-title {
 	margin: 3px 0;
 }
 .post-content {
-	border-top: 1pt solid white;
+	border-top: 1pt solid rgb(7, 20, 39);
 	padding: 10px;
 }
 .post-meta {
-	font-size: 12px;
+	font-size: 11px;
 	padding: 10px 0;
 }
 .post-meta-grid {
@@ -1041,7 +1068,29 @@ div.skillword-title {
 	padding: 10px 0;
 }
 .post-meta a, .post-meta-grid a {
-	color: rgb(178,235,248);
+	color: rgb(7, 20, 39);
+	display:inline-block;
+	padding:1px 2px;
+	background: #DDD;
+	border:1pt solid #aaa;
+	border-radius: 3px;
+}
+.post-meta a:hover, .post-meta-grid a:hover {
+	background:#bbb;
+	text-decoration: none;
+}
+.commentform p {
+	margin:2px 0;
+	font-size: 12px;
+}
+.commentform input[type=submit] {
+	padding:5px 10px;
+	border-radius: 8px;
+	background:#ccc;
+	border:1px solid #aaa;
+}
+.commentform input[type=submit]:active {
+	background:#bbb;
 }
 #crumbs a.logo {
 	position: relative;
@@ -1067,7 +1116,7 @@ div.skillword-title {
 #breadcrumbs {
 	vertical-align: middle;
 }
-#breadcrumbs a { 
+#breadcrumbs a {
 	display: inline-block;
 	height: 20px;
 	vertical-align: middle;
@@ -1087,7 +1136,7 @@ clear:both;
 .nav-next {
 	float: left;
 	display: inline-block;
-}	
+}
 /* Slides */
 /*
 	Slideshow
