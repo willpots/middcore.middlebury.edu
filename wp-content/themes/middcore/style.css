@@ -15,9 +15,7 @@ Tags:
    HTML5 display definitions
    ========================================================================== */
 
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
 
 article,
 aside,
@@ -965,21 +963,12 @@ div.skillword-title {
 
 .post-grid {
 	clear:both;
-    -moz-column-fill: auto;
-    -moz-column-width:220px;
-
-    -webkit-column-fill: auto;
-    -webkit-column-width:220px;
-
-    column-fill: auto;
-    column-width:220px;
-
 }
 
 .post-grid-item {
 	display: block;
-	width:	201px;
-	height: auto;
+	width:	200px;
+	height: 350px;
 	overflow: hidden;
 	background-color: #ffffff;
 	color:rgb(7, 20, 39);
@@ -990,13 +979,10 @@ div.skillword-title {
 }
 
 .post-grid-accent {
-	display:inline-block;
+	display:block;
 	position: relative;
-	vertical-align: top;
-	margin: 8px;
-	-moz-column-break-inside: avoid;
-	-webkit-column-break-inside: avoid;
-	column-break-inside: avoid;
+	float: left;
+	margin: 9px;
 }
 
 .post-title-grid {

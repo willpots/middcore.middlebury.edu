@@ -44,9 +44,6 @@
 				<div class="post-grid">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="post-grid-accent">
-						<script>
-							console.log('<?php the_title_attribute(); ?>');
-						</script>
 						<article id="post-<?php the_ID() ?>"class="post-grid-item">
 							<header>
 								<h3 class="post-title-grid">
